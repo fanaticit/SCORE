@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SCORE Organizer Answers",
+  "type": "object",
+  "required": ["event", "activities", "entrants", "resources", "pages", "privacy", "open_questions"],
+  "properties": {
+    "event": {
+      "type": "object",
+      "required": ["name", "slug"],
+      "properties": {
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "date": { "type": "string" },
+        "venue": { "type": "string" },
+        "organizer": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "activities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "recommended_format": { "type": "string" },
+          "draws_allowed": { "type": "boolean" },
+          "tie_breaks": { "type": "array", "items": { "type": "string" } },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "entrants": {
+      "type": "object",
+      "properties": {
+        "individuals": { "type": "integer" },
+        "teams": { "type": "integer" },
+        "divisions": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "pages": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "late_entry_policy": {
+      "type": "object",
+      "properties": {
+        "allowed_after_start": { "type": "boolean", "default": true },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "round_generation": {
+      "type": "object",
+      "properties": {
+        "first_round_method": {
+          "type": "string",
+          "enum": ["controlled_random", "seeded", "manual_review", "hybrid"]
+        },
+        "allow_first_round_regeneration_before_scores": { "type": "boolean", "default": true },
+        "later_round_method": { "type": "string" },
+        "extra_games_if_early_finish": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["round_robin", "friendly_rounds", "final", "placement_matches"]
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "extra_requests": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "privacy": {
+      "type": "object",
+      "required": ["public_fields", "admin_only_fields"],
+      "properties": {
+        "public_fields": { "type": "array", "items": { "type": "string" } },
+        "admin_only_fields": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

@@ -11,6 +11,7 @@ const required = [
   "prompts/05-vibe-code-event-extras.md",
   "templates/competition-site-brief.md",
   "templates/data-model.md",
+  "templates/organizer-answers.schema.json",
   "templates/site-design-system.md",
   "templates/styles/competition-theme.css",
   "templates/pages/registration.md",

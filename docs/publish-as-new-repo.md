@@ -4,7 +4,9 @@ Use this folder as the root of the public project.
 
 ## Suggested Repo Name
 
-`competition-starter-kit`
+`SCORE`
+
+SCORE stands for Starter Competition & Organizational Resource Engine.
 
 Other reasonable names:
 
@@ -30,7 +32,7 @@ Initial competition website starter kit
 ## GitHub Description
 
 ```text
-Starter resources, prompts, skills, rules, and design templates for vibe-coding local-first competition websites.
+Starter Competition & Organizational Resource Engine for vibe-coding local-first competition websites.
 ```
 
 ## README Positioning
@@ -45,4 +47,3 @@ agent. The first output should be a local website tailored to the organizer's ev
 - Add stack-specific implementation prompts for vanilla JS, React, Svelte, and Astro.
 - Add tests for generated website acceptance criteria.
 - Add a sample site generated from the kit as a separate `examples/generated-site/` folder.
-

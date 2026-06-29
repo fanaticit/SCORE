@@ -20,5 +20,9 @@ Produce:
 6. How to handle disputes, no-shows, draws, and tie-breaks
 7. How to recover from mistakes
 8. What should be visible on public screens
+9. When to use reset tournament state, reset fixtures only, reset scores only, or clear all
+   local data
+10. How to add late entrants after the tournament starts
+11. How to regenerate the first round before scores are entered
+12. How to add extra games, a round-robin phase, or a final if the event finishes early
 ```
-

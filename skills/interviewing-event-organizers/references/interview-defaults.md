@@ -36,3 +36,19 @@ Then offer:
   every match to produce a winner.
 - Ask for resources only once: courts, fields, tables, rooms, or online platform.
 - Ask for privacy preferences once, but always flag contact fields for privacy review.
+- Ask whether players or teams can be added after the tournament starts. Default to yes for
+  community events, but explain that the site then needs late-entry admin controls.
+- At the end of the interview, ask: "Are there any extra requests or event-specific features
+  you want included before I create the site brief?"
+
+## Tournament Operation Defaults
+
+- Late entrants: allowed by default. Admins should be able to add a player or team after the
+  event starts, then place them into future fixtures without rewriting completed results.
+- First-round pairing: allow some randomness or seeding control instead of sorting only by
+  names. The organizer should be able to reset and regenerate the first round if pairings do
+  not work.
+- Later Swiss rounds: pair from standings/ranking while avoiding repeat pairings where
+  practical.
+- Extra games: if Swiss finishes too quickly, offer an optional round-robin, extra friendly
+  rounds, or a final so entrants can keep playing.

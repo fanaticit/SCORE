@@ -16,6 +16,22 @@ Tradeoffs:
 - Requires pairing logic.
 - Standings and tie-breaks must be clear.
 
+First-round generation:
+
+- Do not pair the first round by entrant name alone.
+- Allow controlled randomness, optional seeding, or organizer shuffle.
+- Let the organizer reset and regenerate the first round before scores are entered if the
+  pairings do not work.
+- Once later rounds begin, pair from standings or ranking and avoid repeat pairings where
+  practical.
+
+Extra games:
+
+- If Swiss rounds finish too quickly, the organizer can add extra friendly rounds, a
+  round-robin phase for a small group, or a final.
+- Extra games should not silently rewrite completed Swiss standings. Make their scoring
+  purpose clear: official, friendly, qualifier, or final.
+
 ## Round Robin
 
 Use round-robin for small groups where everyone can play everyone.
@@ -28,6 +44,10 @@ Strengths:
 Tradeoffs:
 
 - Grows too large quickly as entrant count increases.
+
+Round-robin can also be added after a short Swiss phase when the organizer wants entrants
+to have more games. Use this when time remains, the entrant count is manageable, and the
+organizer wants more participation before creating an optional final.
 
 ## Knockout
 
@@ -69,4 +89,3 @@ Strengths:
 Tradeoffs:
 
 - Requires a clear final cutoff time.
-

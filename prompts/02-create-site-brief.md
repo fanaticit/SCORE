@@ -3,7 +3,8 @@
 Use this after the organizer interview.
 
 ```text
-Create a concise implementation brief for a local-first competition website.
+Create a concise implementation brief for a local-first competition website and save the
+confirmed planning artifacts.
 
 Read:
 - templates/competition-site-brief.md
@@ -30,6 +31,29 @@ Use the organizer answers to produce:
 7. Local test plan
 8. Implementation steps
 
-Do not deploy. Build locally first.
-```
+The brief must include:
+- Whether players or teams can be added after the tournament starts. Default: yes.
+- Any extra requests the organizer added at the end of the interview.
+- First-round generation behavior. Do not use name-only pairing; include controlled
+  randomness, seeding, or organizer review.
+- A first-round reset/regenerate option before scores are entered.
+- Optional extra games if the event finishes early, including round-robin, friendly rounds,
+  or a final.
 
+Admin workflows must include separate reset tools:
+- Reset tournament state while keeping participants, teams, and registrations.
+- Reset fixtures only.
+- Reset scores only.
+- Clear all local data as a separate high-risk action.
+
+Save:
+- `examples/my-event/organizer-answers.json`
+- `examples/my-event/interview-summary.md`
+- `examples/my-event/site-brief.md`
+
+If the event name is known, replace `my-event` with a short lowercase hyphenated slug.
+If not, use `my-event` and rename it later.
+
+Do not create application code yet. Do not deploy. Build locally only after the brief is
+reviewed.
+```

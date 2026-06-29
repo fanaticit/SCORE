@@ -20,9 +20,14 @@ making the organizer answer questions the kit can infer from known defaults.
    whether the organizer wants to change it.
 4. Ask only missing questions that affect configuration, safety, or fairness.
 5. Produce a structured requirements draft and list unresolved questions separately.
-6. Hand off format decisions to `designing-competition-formats` when entrants, venues, and
+6. Include the late-entry policy. Default to allowing players or teams to be added after the
+   tournament starts unless the organizer says otherwise.
+7. Ask for extra requests before creating the site brief.
+8. Summarize the interview in chat and wait for confirmation before saving files, unless the
+   user explicitly asks you to save immediately.
+9. Hand off format decisions to `designing-competition-formats` when entrants, venues, and
    time constraints are known.
-7. Hand off privacy-sensitive field choices to `reviewing-participant-privacy`.
+10. Hand off privacy-sensitive field choices to `reviewing-participant-privacy`.
 
 ## Interview Rules
 
@@ -33,7 +38,12 @@ making the organizer answer questions the kit can infer from known defaults.
   not `confirmed`.
 - Treat contact fields, age information, medical notes, and safeguarding details as
   privacy-sensitive from the start.
-- Ask for human approval before turning requirements into files or deployment steps.
+- During the first interview step, read first and talk to the organizer. Do not write files
+  unless the user explicitly asks you to save.
+- After the organizer confirms the summary, saving planning artifacts is allowed before
+  application code is created.
+- Ask for human approval before creating application code, deployment files, or deployment
+  steps.
 
 ## Required Output Shape
 
@@ -43,7 +53,16 @@ Return a requirements draft with these sections:
 - `recommended_defaults`: defaults inferred from activity knowledge
 - `questions`: only unresolved questions needed before config generation
 - `privacy_flags`: fields or workflows requiring privacy review
+- `late_entry_policy`: whether players or teams can be added after the event starts
+- `extra_requests`: organizer-requested additions before the site brief
 - `handoff`: recommended next skill or agent
+
+After the organizer confirms the summary in a SCORE repo, save the same information to:
+
+- `examples/<event-slug>/organizer-answers.json`
+- `examples/<event-slug>/interview-summary.md`
+
+Use a lowercase hyphenated event slug. If the event name is not known, use `my-event`.
 
 ## Examples
 

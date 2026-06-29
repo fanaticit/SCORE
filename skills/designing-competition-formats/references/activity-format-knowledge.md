@@ -37,6 +37,7 @@ Important questions:
 - individual or team chess
 - time control and round duration
 - number of rounds
+- whether first-round pairings should be random, seeded, or organizer-reviewed
 - tie-break rules
 - whether byes are allowed
 - whether scores are win/draw/loss or custom
@@ -122,11 +123,17 @@ Swiss:
 - Good for fairness and continued participation.
 - Good when entrants exceed feasible round-robin capacity.
 - Requires pairing logic and standings.
+- First round should support controlled randomness or seeding, not name-only pairings.
+- Allow first-round reset/regenerate before scores are entered.
+- Later rounds should pair from standings or ranking and avoid repeat pairings where
+  practical.
 
 Round-robin:
 
 - Good for small groups and transparent fairness.
 - Becomes too long as entrants grow.
+- Can be added after a Swiss phase if time remains and the organizer wants entrants to have
+  more games before an optional final.
 
 Knockout:
 
