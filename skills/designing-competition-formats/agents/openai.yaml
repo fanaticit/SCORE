@@ -1,0 +1,4 @@
+interface:
+  display_name: "Designing Competition Formats"
+  short_description: "Recommend fair formats from time and entrants"
+  default_prompt: "Use $designing-competition-formats to recommend a fair format for my tournament."

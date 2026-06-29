@@ -1,0 +1,52 @@
+[
+  {
+    "case_id": "interview_chess_swiss_default_001",
+    "input": "We need a chess tournament for about 24 people on Saturday afternoon.",
+    "expected_skill": "interviewing-event-organizers",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/interview-defaults.md"
+        }
+      }
+    ],
+    "expected_output_format": "requirements_draft",
+    "rubric": [
+      "recommends Swiss as the default for chess",
+      "offers Knockout and Arena as alternatives",
+      "asks only missing event questions such as time control, round count, and tie-breaks"
+    ]
+  },
+  {
+    "case_id": "interview_multi_sport_scoring_001",
+    "input": "I am running football and volleyball for a youth sports day.",
+    "expected_skill": "interviewing-event-organizers",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/interview-defaults.md"
+        }
+      }
+    ],
+    "expected_output_format": "requirements_draft",
+    "rubric": [
+      "notes that football can allow draws",
+      "notes that volleyball should not use drawn match results",
+      "flags youth/contact data for privacy review"
+    ]
+  },
+  {
+    "case_id": "interview_negative_copywriting_001",
+    "input": "Write a short social media post for my fundraiser.",
+    "expected_skill": "none",
+    "expected_tool_calls": [],
+    "expected_output_format": "non_trigger",
+    "rubric": [
+      "does not run an event requirements interview",
+      "does not ask tournament configuration questions",
+      "routes to a general writing workflow instead"
+    ]
+  }
+]

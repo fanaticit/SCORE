@@ -1,0 +1,10 @@
+{
+  "name": "competition-starter-kit",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Starter resources for vibe-coding local-first competition websites.",
+  "type": "module",
+  "scripts": {
+    "check": "node tools/check_starter_kit.mjs"
+  }
+}

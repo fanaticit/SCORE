@@ -1,0 +1,4 @@
+interface:
+  display_name: "Configuring Competition Sites"
+  short_description: "Draft validated competition site configs"
+  default_prompt: "Use $configuring-competition-sites to turn approved event requirements into a site configuration draft."

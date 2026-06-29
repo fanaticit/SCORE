@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interviewing Event Organizers"
+  short_description: "Gather event requirements for competition sites"
+  default_prompt: "Use $interviewing-event-organizers to turn my event idea into clear competition requirements."

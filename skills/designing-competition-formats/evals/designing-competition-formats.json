@@ -1,0 +1,78 @@
+[
+  {
+    "case_id": "format_chess_swiss_options_001",
+    "input": "Design a chess tournament for 32 players in one afternoon.",
+    "expected_skill": "designing-competition-formats",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/activity-format-knowledge.md"
+        }
+      }
+    ],
+    "expected_output_format": "format_recommendation",
+    "rubric": [
+      "recommends Swiss as the default",
+      "explains Swiss, Knockout, and Arena tradeoffs",
+      "asks for round duration, round count, and tie-breaks before final scheduling"
+    ]
+  },
+  {
+    "case_id": "format_volleyball_no_draws_001",
+    "input": "We have 8 volleyball teams, 2 courts, and 3 hours. Can we use league scoring with draws?",
+    "expected_skill": "designing-competition-formats",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/activity-format-knowledge.md"
+        }
+      }
+    ],
+    "expected_output_format": "format_recommendation",
+    "rubric": [
+      "rejects drawn volleyball match results",
+      "suggests a decisive set or match winner approach",
+      "recommends a feasible pool, Swiss-style, or knockout structure based on timing"
+    ]
+  },
+  {
+    "case_id": "format_football_draws_001",
+    "input": "Football teams can draw in the group stage, but the final needs a winner.",
+    "expected_skill": "designing-competition-formats",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/activity-format-knowledge.md"
+        }
+      }
+    ],
+    "expected_output_format": "format_recommendation",
+    "rubric": [
+      "allows draws in group or qualifying stages",
+      "requires a decisive final tie-break such as penalties",
+      "includes points and tie-break assumptions"
+    ]
+  },
+  {
+    "case_id": "format_boundary_missing_constraints_001",
+    "input": "Make a tournament format for our event, but I do not know how many teams, how much time we have, or how many courts are available.",
+    "expected_skill": "designing-competition-formats",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/activity-format-knowledge.md"
+        }
+      }
+    ],
+    "expected_output_format": "clarifying_questions",
+    "rubric": [
+      "does not pretend to know the final format",
+      "asks for entrants, time window, and resource count",
+      "offers only provisional format guidance until constraints are known"
+    ]
+  }
+]

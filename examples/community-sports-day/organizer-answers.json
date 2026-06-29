@@ -1,0 +1,27 @@
+{
+  "event_name": "Community Sports Day",
+  "activities": ["chess", "football", "volleyball"],
+  "expected_entrants": {
+    "chess_players": 24,
+    "football_teams": 8,
+    "volleyball_teams": 6
+  },
+  "resources": {
+    "halls": 1,
+    "football_pitches": 2,
+    "volleyball_courts": 2
+  },
+  "needs": [
+    "registration",
+    "teams_board",
+    "fixtures",
+    "score_entry",
+    "public_live_view",
+    "standings"
+  ],
+  "privacy": {
+    "public_fields": ["team_name", "participant_display_name", "activity", "fixture", "score", "standing"],
+    "admin_only_fields": ["phone", "email", "medical_note", "internal_note"]
+  }
+}
+

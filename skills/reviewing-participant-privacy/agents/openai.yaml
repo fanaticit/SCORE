@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reviewing Participant Privacy"
+  short_description: "Check participant data and admin boundaries"
+  default_prompt: "Use $reviewing-participant-privacy to check my competition setup for participant privacy risks."

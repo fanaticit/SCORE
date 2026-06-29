@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preparing Cloudflare Deployment"
+  short_description: "Plan Cloudflare Pages and D1 deployment"
+  default_prompt: "Use $preparing-cloudflare-deployment to prepare a safe Cloudflare Pages deployment checklist."

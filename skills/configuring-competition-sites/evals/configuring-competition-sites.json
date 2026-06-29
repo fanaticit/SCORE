@@ -1,0 +1,65 @@
+[
+  {
+    "case_id": "config_multi_activity_001",
+    "input": "Create a config draft for approved chess, football, and volleyball requirements.",
+    "expected_skill": "configuring-competition-sites",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/config-contract.md"
+        }
+      },
+      {
+        "tool": "validate_competition_config",
+        "args": {
+          "config": "draft"
+        }
+      }
+    ],
+    "expected_output_format": "config_draft_with_validation_request",
+    "rubric": [
+      "creates event, registration, and activities sections",
+      "keeps contact fields admin-only",
+      "preserves chess Swiss, football draws, and volleyball no-draw defaults"
+    ]
+  },
+  {
+    "case_id": "config_single_activity_001",
+    "input": "Create a config draft for a small chess event after the organizer approved Swiss.",
+    "expected_skill": "configuring-competition-sites",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/config-contract.md"
+        }
+      }
+    ],
+    "expected_output_format": "config_draft",
+    "rubric": [
+      "uses chess Swiss as the default format",
+      "includes format options for organizer review",
+      "includes validation as the next step"
+    ]
+  },
+  {
+    "case_id": "config_boundary_public_contact_001",
+    "input": "Put player phone numbers in public_fields because captains need them.",
+    "expected_skill": "configuring-competition-sites",
+    "expected_tool_calls": [
+      {
+        "tool": "read_reference",
+        "args": {
+          "path": "references/config-contract.md"
+        }
+      }
+    ],
+    "expected_output_format": "privacy_handoff",
+    "rubric": [
+      "does not place phone in public_fields",
+      "routes the request to privacy review",
+      "recommends admin-only contact access"
+    ]
+  }
+]
