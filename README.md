@@ -6,6 +6,11 @@ SCORE helps a volunteer organizer and their coding agent create a local competit
 for sports days, chess tournaments, school events, charity games, and multi-sport community
 competitions.
 
+SCORE is built from more than 10 years of hands-on competition experience, including running
+competitions at a national level in South Africa. The goal is to turn that practical
+knowledge into reusable prompts, rules, templates, and agent skills that others can build
+on.
+
 This repo is intentionally not the finished website. It is the reusable project brief,
 skills, prompts, rules, page patterns, and design system that help a coding agent build the
 right website after interviewing the organizer.
@@ -22,6 +27,8 @@ right website after interviewing the organizer.
 - 🧩 `templates/`: page blueprints, data model, site requirements, and design system.
 - 🗂️ `examples/`: example organizer answers and generated briefs.
 - ✅ `checklists/`: launch and tournament-day checks.
+- 🎬 `docs/kaggle-video-script.md`: short video script and storyboard for the capstone
+  submission.
 - 🚀 `docs/publish-as-new-repo.md`: guidance for publishing this folder as a clean public
   GitHub project.
 
