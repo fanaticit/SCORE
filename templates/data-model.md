@@ -42,11 +42,15 @@ Only `displayName`, `activityPreferences`, and `organization` should appear publ
 
 - `id`
 - `name`
+- `slug`
 - `format`
 - `scoring`
 - `drawsAllowed`
 - `tieBreaks`
 - `resources`
+- `visualIdentity.color`
+- `visualIdentity.icon`
+- `visualIdentity.label`
 
 ## Fixture
 
@@ -57,7 +61,7 @@ Only `displayName`, `activityPreferences`, and `organization` should appear publ
 - `resource`
 - `entrantA`
 - `entrantB`
-- `status`: `waiting`, `ready`, `running`, `complete`, `disputed`
+- `status`: `waiting`, `ready`, `running`, `complete`
 - `score`
 - `winner`
 - `notes`
@@ -99,7 +103,7 @@ Clear or rebuild for "reset tournament state":
 - winners
 - bracket progress
 - live-view queue
-- dispute state
+- score correction notes
 
 Only "clear all local data" should remove participants, teams, and registrations.
 
@@ -113,3 +117,10 @@ Only "clear all local data" should remove participants, teams, and registrations
 - Late entrants are allowed by default and should be added only to future fixtures unless an
   admin deliberately changes completed rounds.
 - Extra games can be stored as official, friendly, round-robin, or final fixtures.
+
+## Multi-Sport Display Rules
+
+- Each `Activity` should have a stable `slug` for URLs such as `/live?sport=football`.
+- Each activity should have a visual identity used across registration, teams, fixtures,
+  live view, standings, and sport summary pages.
+- Standings and live views should support filtering by activity slug with a query string.

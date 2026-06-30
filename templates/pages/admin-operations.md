@@ -11,7 +11,8 @@ Give organizers simple controls for running the event.
 - Generate fixtures.
 - Start and complete matches.
 - Enter and correct scores.
-- Resolve disputes.
+- Edit scores from the current round.
+- Correct recent scores with an admin-only audit note where practical.
 - Publish standings.
 - Add player or team after the tournament starts.
 - Generate first-round fixtures with controlled randomness or seeding.
@@ -65,6 +66,21 @@ If Swiss or qualifying rounds finish too quickly, admins should be able to add:
 
 Label whether extra games affect official standings.
 
+## Score Editing
+
+Do not create a public result-review fixture state. When a score is wrong, admins should be
+able to edit scores from the current round.
+
+Recommended controls:
+
+- Edit score for current-round fixture.
+- Reopen a recently completed current-round fixture.
+- Add an admin-only correction note where practical.
+- Recalculate standings after score edits.
+
+Avoid letting public users mark games for review. Keep score correction as an admin
+workflow.
+
 ## Admin Reset Tools
 
 Generated sites should separate reset actions by blast radius. Do not offer only one
@@ -90,7 +106,7 @@ Clear or regenerate:
 - Scores.
 - Standings.
 - Brackets.
-- Disputes.
+- Score correction notes.
 - Live-view queue.
 
 ### Reset Fixtures Only

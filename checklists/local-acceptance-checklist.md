@@ -4,12 +4,18 @@
 - Demo seed data is available.
 - Registration can create individual or team entries.
 - Teams board can organize unassigned players.
+- Multi-sport sites use clear colors, labels, badges, or icons for each sport.
+- Each sport has a focused page or a shareable query-string filter, such as
+  `/live?sport=football`.
+- Standings work well on mobile phones without awkward zooming.
 - Fixtures can be generated or manually created.
 - First-round fixture generation is not based on names alone and supports shuffle, seeding,
   or organizer review.
 - First-round fixtures can be reset and regenerated before scores are entered.
 - Later Swiss rounds are based on standings/ranking or avoiding repeat pairings.
 - Admins can start matches and enter scores.
+- Admins can edit scores from the current round.
+- Public users cannot mark fixtures for score review.
 - Admins can add a player or team after the tournament starts by default.
 - Late entrants are added to future fixtures without changing completed results by default.
 - Admins can add extra games, a round-robin phase, or a final if the event finishes early.

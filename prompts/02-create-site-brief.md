@@ -12,6 +12,8 @@ Read:
 - templates/pages/registration.md
 - templates/pages/teams-board.md
 - templates/pages/live-view.md
+- templates/pages/sport-summary.md
+- templates/pages/standings.md
 - templates/pages/admin-operations.md
 - templates/site-design-system.md
 - templates/styles/competition-theme.css
@@ -39,6 +41,13 @@ The brief must include:
 - A first-round reset/regenerate option before scores are entered.
 - Optional extra games if the event finishes early, including round-robin, friendly rounds,
   or a final.
+- Multi-sport visual identity: each sport needs a color, badge, icon, or label that appears
+  on teams, fixtures, live view, and standings.
+- Sport-specific player pages: either separate pages per sport or filters with shareable
+  query strings such as `/live?sport=football`.
+- Mobile-friendly standings: responsive cards, compact mobile tables, or expandable rows.
+- Admin score correction: admins can edit current-round scores; do not create a public
+  result-review fixture status.
 
 Admin workflows must include separate reset tools:
 - Reset tournament state while keeping participants, teams, and registrations.

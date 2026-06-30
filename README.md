@@ -215,7 +215,10 @@ Most competition sites should include:
 - 🛠️ Admin fixture and score entry.
 - 🔁 Admin tools for late entrants, first-round regeneration, extra games, and safe reset
   options.
+- 🏷️ Sport-specific colors, labels, badges, or icons so multi-sport teams are not confused.
+- 🔗 Sport pages or shareable filters such as `/live?sport=football`.
 - 📺 Public live view for current, waiting, and completed games.
-- 📊 Standings or bracket view.
+- 📊 Mobile-friendly standings or bracket view.
+- ✏️ Admin score editing for the current round.
 - 🛡️ Privacy-safe public pages that do not expose phone numbers, emails, medical notes, or
   internal organizer notes.

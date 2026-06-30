@@ -22,7 +22,7 @@
 - Mark fixtures ready.
 - Start fixtures.
 - Enter scores.
-- Resolve disputes.
+- Edit current-round scores when corrections are needed.
 - Keep announcements clear.
 - Watch for no-shows and resource delays.
 
@@ -32,4 +32,3 @@
 - Export results if needed.
 - Remove or protect sensitive participant data.
 - Note lessons learned for future rule references.
-

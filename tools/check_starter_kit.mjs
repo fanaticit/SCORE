@@ -17,6 +17,8 @@ const required = [
   "templates/pages/registration.md",
   "templates/pages/teams-board.md",
   "templates/pages/live-view.md",
+  "templates/pages/sport-summary.md",
+  "templates/pages/standings.md",
   "templates/pages/admin-operations.md",
   "rules/format-guide.md",
   "rules/sports/README.md",

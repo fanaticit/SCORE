@@ -25,6 +25,7 @@
 - Teams board:
 - Fixtures:
 - Live view:
+- Sport summary pages or filtered sport views:
 - Standings or brackets:
 - Admin:
 
@@ -39,6 +40,8 @@ For each activity:
 - Scoring:
 - Draws allowed:
 - Tie-breaks:
+- Visual identity: color, badge, icon, or label
+- Sport page or filter URL:
 - First-round generation: random, seeded, manual review, or hybrid
 - Regenerate first round before scores are entered: yes/no
 - Add extra games if the event finishes early: round-robin, friendly rounds, or final
@@ -87,7 +90,7 @@ Future production:
 
 - Reset tournament state:
   - Keeps participants, teams, and registrations.
-  - Clears fixtures, scores, standings, brackets, disputes, and live queue.
+  - Clears fixtures, scores, standings, brackets, score correction notes, and live queue.
 - Reset fixtures only:
   - Keeps participants, teams, registrations, and activity settings.
   - Clears fixtures, fixture assignments, scores, and standings.
@@ -114,3 +117,14 @@ Future production:
 - Add extra games:
   - Adds round-robin, friendly rounds, or a final if Swiss or qualifying rounds finish early.
   - Clearly labels whether extra games affect standings.
+- Edit current-round scores:
+  - Allows admins to correct scores without a public result-review state.
+  - Recalculates standings after the correction.
+
+## Multi-Sport Design
+
+- Use visual identity for each sport or competition so players and teams are not confused.
+- Add sport summary pages or live-view filters for each sport.
+- If filters are used, store the sport in the query string, for example
+  `/live?sport=football` or `/standings?sport=chess`.
+- Make standings mobile-friendly with responsive cards, compact tables, or expandable rows.

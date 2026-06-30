@@ -18,6 +18,12 @@ Use this repo to create a competition website only after interviewing the organi
   not name-only sorting.
 - Include admin options for first-round regeneration before scores are entered and extra
   games if the event finishes early.
+- For multi-sport events, give each sport a clear visual identity across teams, fixtures,
+  live view, and standings.
+- Provide separate sport pages or query-string filters such as `/live?sport=football`.
+- Make standings mobile-friendly by default.
+- Use admin current-round score editing for corrections; do not add public result-review
+  fixture states.
 - Do not expose participant phone numbers, emails, medical notes, safeguarding notes, dates
   of birth, or internal organizer notes on public pages.
 - Require human approval before production deployment, database schema changes, bulk
